@@ -4,4 +4,4 @@ all: challenge.jar
 	java -jar challenge.jar
 
 challenge.jar: challenge.kt
-	kotlinc challenge.kt -include-runtime -d challenge.jar
+	kotlinc $< -include-runtime -d $@
